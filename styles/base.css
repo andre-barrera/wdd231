@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --first-color: #9b9b7a;
+    --second-color: #d08c60;
+    --third-color: #ffcb69;
+    --fourth-color: #997b66;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    column-gap: 8px;
+    border-bottom: solid 1px #ddd;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span{
+    font-size: 1.2rem;
+    color: var(--fourth-color);
+}
+
+/* Navigation */
+
+.hamburger{
+    border: none;
+    background: none;
+    color: var(--fourth-color);
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.hamburger::before{
+    content: "\2630";
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+}
+
+.navigation{
+    display: none;
+}
+
+.navigation.show{
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a{
+    display: block;
+    text-decoration: none;
+    padding: 0.9rem 10px;
+    border-bottom: solid 1px #ddd;
+    color: var(--fourth-color);
+}
+
+.navigation a:hover{
+    background: var(--second-color) !important;
+    color: var(--third-color);
+}
+
+.navigation a.active{
+    background-color: var(--third-color);
+    text-decoration: underline;
+}
+
+
+/* Page Content */
+
+h1{
+    padding-left: 10px;
+}
+
+section {
+    padding: 10px 10px 20px 10px;
+}
+
+.about-me p{
+    margin-top: 10px;
+}
+
+.student-photo img {
+    height: 200px;
+    width: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+
+
+/* Footer */
+
+footer{
+    background-color: var(--fourth-color);
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    padding-bottom: 15px;
+}
+
+.social a{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--third-color);
+    border-radius: 22px;
+}
+
+.social img{
+    height: 22px;
+    width: 22px;
+}
