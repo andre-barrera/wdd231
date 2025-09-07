@@ -17,7 +17,7 @@ header img{
 }
 
 header span {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
 }
 
 .hamburger{
@@ -51,12 +51,15 @@ h1{
     gap: 20px;
   }
 
-  .about-me {
+.about-me {
     grid-column: 1 / 2;
     background-color: #eee;
     padding: 0;
     margin-left: 20px;
-  }
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 
   .about-me h2{
     background-color: var(--second-color);
@@ -78,6 +81,8 @@ h1{
     padding: 0;
     text-align: center;
     margin-right: 20px;
+    border-radius: 15px;
+    overflow: hidden;
   }
 
   .student-photo h2{
@@ -100,6 +105,7 @@ h1{
     font-size: 1.5rem;
     text-align: center;
     color: white;
+    border-radius: 15px;
   }
 
   footer{

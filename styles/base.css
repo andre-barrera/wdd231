@@ -87,10 +87,26 @@ header span{
 
 h1{
     padding-left: 10px;
+    font-size: 1.5rem;
 }
 
 section {
-    padding: 10px 10px 20px 10px;
+    background-color: #eee;
+    padding: 0;
+    margin: 20px;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+section h2 {
+    background-color: var(--second-color);
+    margin: 0 0 10px 0;
+    padding: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
 }
 
 .about-me p{
@@ -100,11 +116,21 @@ section {
 .student-photo img {
     height: 200px;
     width: auto;
-    display: block;
+    display: flex;
     margin: 10px auto;
 }
 
 
+
+.courses{
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.courses h2 {
+    border-radius: 15px;
+}
 
 /* Footer */
 
@@ -176,6 +202,6 @@ footer{
 }
 
 .course-card.completed {
-    background-color: var(--first-color);
+    background-color: #718355;
     color: white;
 }
