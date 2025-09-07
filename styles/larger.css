@@ -53,21 +53,11 @@ h1{
 
 .about-me {
     grid-column: 1 / 2;
-    background-color: #eee;
-    padding: 0;
-    margin-left: 20px;
-    border-radius: 15px;
-    overflow: hidden;
 }
 
 
   .about-me h2{
-    background-color: var(--second-color);
-    margin: 0 0 10px 0;
-    padding: 15px;
     font-size: 1.5rem;
-    text-align: center;
-    color: white;
   }
 
   .about-me p{
@@ -77,20 +67,10 @@ h1{
 
   .student-photo {
     grid-column: 2 / 3;
-    background-color: #eee;
-    padding: 0;
-    text-align: center;
-    margin-right: 20px;
-    border-radius: 15px;
-    overflow: hidden;
   }
 
   .student-photo h2{
-    background-color: var(--second-color);
-    margin: 0 0 10px 0;
-    padding: 15px;
     font-size: 1.5rem;
-    color: white;
   }
 
   .courses{
@@ -99,13 +79,7 @@ h1{
   }
 
   .courses h2{
-    background-color: var(--second-color);
-    margin: 0 0 10px 0;
-    padding: 15px;
     font-size: 1.5rem;
-    text-align: center;
-    color: white;
-    border-radius: 15px;
   }
 
   footer{
