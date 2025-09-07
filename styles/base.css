@@ -6,9 +6,9 @@
 
 :root{
     --first-color: #9b9b7a;
-    --second-color: #d08c60;
-    --third-color: #ffcb69;
-    --fourth-color: #997b66;
+    --second-color: #5f3e29;
+    --third-color: #f4c773;
+    --fourth-color: #665142;
 }
 
 header{
@@ -65,21 +65,21 @@ header span{
     padding: 0;
 }
 
-.navigation a{
-    display: block;
+.navigation a{    display: block;
     text-decoration: none;
     padding: 0.9rem 10px;
     border-bottom: solid 1px #ddd;
-    color: var(--fourth-color);
+    color: #5a3c00;
 }
 
 .navigation a:hover{
     background: var(--second-color) !important;
-    color: var(--third-color);
+    color: white;
 }
 
 .navigation a.active{
-    background-color: var(--third-color);
+    background-color: #5a3c00;
+    color: white;
 }
 
 
@@ -135,9 +135,10 @@ section h2 {
 /* Footer */
 
 footer{
-    background-color: var(--fourth-color);
+    background-color: var(--second-color);
     padding: 1rem 10px;
     text-align: center;
+    color: white;
 }
 
 .social{
@@ -202,6 +203,6 @@ footer{
 }
 
 .course-card.completed {
-    background-color: #718355;
+    background-color: #505d3b;
     color: white;
 }
