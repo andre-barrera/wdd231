@@ -1,0 +1,113 @@
+@media only screen and (min-width: 38rem){
+
+:root{
+    --first-color: #9b9b7a;
+    --second-color: #d08c60;
+    --third-color: #ffcb69;
+    --fourth-color: #997b66;
+}
+
+header{
+    grid-template-columns: 50px auto;
+}
+
+header img{
+    height: 50px;
+    width: auto;
+}
+
+header span {
+    font-size: 1.9rem;
+}
+
+.hamburger{
+    display: none;
+}
+
+.navigation{
+    display: block;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation ul{
+    display: flex;
+}
+
+.navigation a{
+    padding: 16px 40px;
+    font-size: 1.2rem;
+}
+
+h1{
+    padding: 0;
+    margin: 20px 0 0 20px;
+    color: var(--fourth-color);
+}
+
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  .about-me {
+    grid-column: 1 / 2;
+    background-color: #eee;
+    padding: 0;
+    margin-left: 20px;
+  }
+
+  .about-me h2{
+    background-color: var(--second-color);
+    margin: 0 0 10px 0;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .about-me p{
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+
+  .student-photo {
+    grid-column: 2 / 3;
+    background-color: #eee;
+    padding: 0;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .student-photo h2{
+    background-color: var(--second-color);
+    margin: 0 0 10px 0;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .courses{
+    grid-column: 1 / -1;
+    margin: 20px;
+  }
+
+  .courses h2{
+    background-color: var(--second-color);
+    margin: 0 0 10px 0;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  footer{
+    background-color: var(--second-color);
+    color: white;
+  }
+}
+
+
+
+
