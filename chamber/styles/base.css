@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --first-color: #9b9b7a;
+    --second-color: #5f3e29;
+    --third-color: #f4c773;
+    --fourth-color: #665142;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span{
+    font-size: 1.2rem;
+    color: var(--fourth-color);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0 5px 0;
+}
+
+/* nav */
+
+.hamburger{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 2.3rem;
+    color: var(--fourth-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before{
+    content: "\2630";
+}
+
+.hamburger.show::before{
+    content: "`\00D7";
+}
+
+/*
+.navigation{
+    display: none;
+}
+*/
+.navigation.show{
+    display: block;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.navigation a{
+    display: block;
+    text-decoration: none;
+    padding: 13px 20px;
+    color: #5a3c00;
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation a:hover{
+    color: white;
+    background-color: var(--second-color) !important;
+}
+
+.navigation a.active{
+    background-color: #5a3c00;
+    color: white;   
+}
+
+h1{
+    padding-left: 1rem;
+}
+
+
+/* Member cards layout */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cards section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.cards section img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+/* List View */
+.list .cards {
+    display: block;
+}
+
+.list .cards section {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.list .cards section img {
+    display: none;
+}
+
+.view-buttons{
+    justify-self: center;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: var(--second-color);
+    color: white;
+}
+
+.contact-info{
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    padding-bottom: 15px;
+}
+
+.social a{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--third-color);
+    border-radius: 22px;
+}
+
+.social img{
+    height: 22px;
+    width: 22px;
+}
+
+.currentyear{
+    text-align: center;
+}
+
+.lastModified{
+    text-align: center;
+    padding-bottom: 10px;
+}
+

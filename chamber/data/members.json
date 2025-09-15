@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Tech Solutions",
+    "address": "123 Innovation St, Guatemala City",
+    "phone": "+502 5555-1234",
+    "website": "",
+    "image": "tech-solutions.webp",
+    "membership": 3,
+    "description": "Leaders in IT consulting and software development."
+  },
+  {
+    "name": "Green Farms",
+    "address": "45 Agro Park, Chimaltenango",
+    "phone": "+502 5555-5678",
+    "website": "https://greenfarms.com",
+    "image": "green-farms.webp",
+    "membership": 2,
+    "description": "Sustainable agriculture and organic food supplier."
+  },
+  {
+    "name": "EduSmart",
+    "address": "78 Learning Ave, Antigua",
+    "phone": "+502 5555-9876",
+    "website": "https://edusmart.com",
+    "image": "edu-smart.webp",
+    "membership": 1,
+    "description": "E-learning solutions and educational technology."
+  },
+  {
+    "name": "HealthPlus",
+    "address": "12 Wellness Blvd, Guatemala City",
+    "phone": "+502 5555-2345",
+    "website": "https://healthplus.com",
+    "image": "healthplus.webp",
+    "membership": 3,
+    "description": "Healthcare services and wellness programs."
+  },
+  {
+    "name": "Eco Energy",
+    "address": "90 Solar Rd, Quetzaltenango",
+    "phone": "+502 5555-8765",
+    "website": "https://ecoenergy.com",
+    "image": "eco-energy.webp",
+    "membership": 2,
+    "description": "Renewable energy and green power solutions."
+  },
+  {
+    "name": "Artisan Hub",
+    "address": "5 Craft Lane, Cobán",
+    "phone": "+502 5555-3456",
+    "website": "https://artisanhub.com",
+    "image": "artisan-hub.webp",
+    "membership": 1,
+    "description": "Handmade crafts and local artisan marketplace."
+  },
+  {
+    "name": "BuildRight",
+    "address": "200 Industrial Zone, Guatemala City",
+    "phone": "+502 5555-6789",
+    "website": "https://buildright.com",
+    "image": "build-right.webp",
+    "membership": 3,
+    "description": "Construction and infrastructure development."
+  }
+]

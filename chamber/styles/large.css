@@ -1,0 +1,84 @@
+@media only screen and (min-width: 38rem){
+
+:root{
+    --first-color: #9b9b7a;
+    --second-color: #5f3e29;
+    --third-color: #f4c773;
+    --fourth-color: #665142;
+}
+
+header{
+    border: none;
+}
+
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #5f3e29;
+}
+
+
+
+.navigation a{
+    border: none;
+    color: white;
+}
+
+header span {
+    font-size: 2.1rem;
+    padding-left: 25px;
+    color:white;
+}
+
+.hamburger{
+    display: none;
+}
+
+.navigation{
+    display: block;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation ul{
+    display: flex;
+}
+
+.navigation a{
+    padding: 16px 40px;
+    font-size: 1.2rem;
+}
+
+h1{
+    padding: 0;
+    margin: 20px 0 0 20px;
+    color: var(--fourth-color);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* vertical centering works here */
+  background-color: var(--second-color);
+  color: white;
+  padding: 0;
+}
+
+.contact-info{
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.currentyear{
+    padding: 15px 1rem 10px 0;
+}
+
+.lastModified{
+    padding-right: 1rem;
+}
+.social{
+    padding-top: 20px;
+}
+
+}
