@@ -19,11 +19,14 @@ header{
     background-color: #5f3e29;
 }
 
-
-
 .navigation a{
     border: none;
     color: white;
+}
+
+.navigation a:hover{
+    color: white;
+    background-color: var(--third-color) !important;
 }
 
 header span {
@@ -38,15 +41,20 @@ header span {
 
 .navigation{
     display: block;
-    border-bottom: solid 1px #ddd;
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    justify-items: right;
 }
+
+
 
 .navigation ul{
     display: flex;
 }
 
 .navigation a{
-    padding: 16px 40px;
+    padding: 16px 60px;
     font-size: 1.2rem;
 }
 

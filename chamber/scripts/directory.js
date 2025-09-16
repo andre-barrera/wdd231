@@ -1,4 +1,3 @@
-// Fetch and display members
 async function fetchMembers() {
     try {
         const response = await fetch("data/members.json");
@@ -40,7 +39,6 @@ function getMembershipLevel(level) {
     }
 }
 
-// Toggle between grid and list
 document.getElementById("gridBtn").addEventListener("click", () => {
     document.body.classList.remove("list");
 });
@@ -48,7 +46,6 @@ document.getElementById("listBtn").addEventListener("click", () => {
     document.body.classList.add("list");
 });
 
-// Footer: year + last modified
 const year = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 
@@ -57,14 +54,25 @@ const today = new Date();
 year.innerHTML = `&copy; ${today.getFullYear()}`;
 lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
 
-// Init
+
 fetchMembers();
 
 
 const navbutton = document.querySelector("#ham-btn");
-const navbar = document.querySelector('#nav-bar');
+const navbar = document.querySelector(".navigation");
 
-navbutton.addEventListener('click', () => {
-    navbutton.classList.toggle('show');
-    navbar.classList.toggle('show');
-})
+navbutton.addEventListener("click", () => {
+    navbutton.classList.toggle("show");
+    navbar.classList.toggle("show");
+});
+
+
+// Wayfinding: highlight active link
+const navLinks = document.querySelectorAll(".navigation a");
+const currentPath = window.location.pathname;
+
+navLinks.forEach(link => {
+    if (link.getAttribute("href") !== "#" && currentPath.includes(link.getAttribute("href"))) {
+        link.classList.add("active");
+    }
+});

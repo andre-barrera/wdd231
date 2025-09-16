@@ -51,14 +51,14 @@ header span{
 }
 
 .hamburger.show::before{
-    content: "`\00D7";
+    content: "\00D7";
 }
 
-/*
+
 .navigation{
     display: none;
 }
-*/
+
 .navigation.show{
     display: block;
 }
@@ -84,8 +84,9 @@ header span{
 }
 
 .navigation a.active{
-    background-color: #5a3c00;
+    background-color: #574f3fd5;
     color: white;   
+    border: 1px dashed black;
 }
 
 h1{
@@ -146,6 +147,7 @@ footer{
 .contact-info{
     padding: 10px 10px;
     text-align: center;
+    margin-left: 2rem;
 }
 
 .social{
@@ -172,10 +174,12 @@ footer{
 
 .currentyear{
     text-align: center;
+    margin-right: 2rem;
 }
 
 .lastModified{
     text-align: center;
     padding-bottom: 10px;
+    margin-right: 2rem;
 }
 
