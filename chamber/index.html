@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Cesar Barrera">
-    <meta name="description" content="Chamber of Comerce directory page">
+    <meta name="description" content="Chamber of Comerce home page">
     <title>Guatemala House of Commerce</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/directory.js" defer></script>
     <meta property="og:title" content="Guatemala Chamger of Commerce">
     <meta property="og:description" content="Discover how to promote and grow your local business while connecting with local members">
     <meta property="og:image" content="https://andre-barrera.github.io/wdd231/chamber/images/chamber-og.jpg">
     <meta property="og:url" content="https://andre-barrera.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
     <div class="menu">
@@ -37,12 +37,43 @@
     </nav>
     </div>
     <main>
-    <h1>Directory</h1>
-    <div class="view-buttons">
-        <button id="gridBtn">Grid View</button>
-        <button id="listBtn">List View</button>
+        <div class="hero-container">
+            <img src="images/hero-img3.webp" alt="Guatemala Chamber Of Commerce" class="hero-image">
+
+            <a href="#" class="hero-button">Join Now</a>
+        </div>
+
+        <h1>Home</h1>
+    
+    <div class="card-container">
+
+        <div class="card">
+          <div class="card-header">Events</div>
+          <div class="card-body" id="events-card"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Current Weather</div>
+            <div class="card-body">
+            <h2 id="temp"></h2>
+            <img id="weatherIcon" alt="Weather Icon">
+            <p id="description"></p>
+            <p id="highLow"></p>
+            <p id="humidity"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">Weather Forecast</div>
+            <div class="card-body" id="forecast-card"></div>
+        </div>
+
     </div>
-    <div class="cards"></div>
+
+    <div class="business-cards"></div>
+
     </main>
     <footer>
         <p class="contact-info">Guatemala Chamber of Commerce<br>1st Street 2nd avenue<br>Guatemala, Guatemala<br>info@commerge.gt<br>(502)9999-9999</p>

@@ -89,4 +89,25 @@ footer {
     padding-top: 20px;
 }
 
+/* Homepage */
+
+.hero{
+    justify-self: center;
+    padding: 0px 2rem 0px 2rem;
+}
+
+.hero img{
+    width: auto;
+    height: 85Vh;
+    justify-self: center;
+}
+
+.hero-button {
+    font-size: 1.3rem;
+    right: 30px;
+    top: 500px;
+    padding: 20px 35px;
+}
+
+
 }
