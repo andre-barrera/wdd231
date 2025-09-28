@@ -1,0 +1,48 @@
+{
+  "memberships": [
+    {
+      "id": "np",
+      "title": "NP Membership",
+      "linkText": "Learn More",
+      "cost": "Free",
+      "benefits": [
+        "Access to newsletters",
+        "Community events participation"
+      ]
+    },
+    {
+      "id": "bronze",
+      "title": "Bronze Membership",
+      "linkText": "Learn More",
+      "cost": "$50/year",
+      "benefits": [
+        "Event discounts",
+        "Directory listing",
+        "Access to basic training"
+      ]
+    },
+    {
+      "id": "silver",
+      "title": "Silver Membership",
+      "linkText": "Learn More",
+      "cost": "$100/year",
+      "benefits": [
+        "All Bronze benefits",
+        "Spotlight advertising on homepage",
+        "Access to advanced training"
+      ]
+    },
+    {
+      "id": "gold",
+      "title": "Gold Membership",
+      "linkText": "Learn More",
+      "cost": "$200/year",
+      "benefits": [
+        "All Silver benefits",
+        "VIP event invitations",
+        "Premium promotions",
+        "Priority support"
+      ]
+    }
+  ]
+}

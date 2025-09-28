@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Cesar Barrera">
-    <meta name="description" content="Chamber of Comerce directory page">
+    <meta name="description" content="Chamber of Comerce home page">
     <title>Guatemala House of Commerce</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/directory.js" defer></script>
     <meta property="og:title" content="Guatemala Chamger of Commerce">
     <meta property="og:description" content="Discover how to promote and grow your local business while connecting with local members">
     <meta property="og:image" content="https://andre-barrera.github.io/wdd231/chamber/images/chamber-og.jpg">
     <meta property="og:url" content="https://andre-barrera.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <div class="menu">
@@ -37,12 +36,57 @@
     </nav>
     </div>
     <main>
-    <h1>Directory</h1>
-    <div class="view-buttons">
-        <button id="gridBtn">Grid View</button>
-        <button id="listBtn">List View</button>
-    </div>
-    <div class="cards"></div>
+        <div class="join-c">
+        <h1 class="heading">Join</h1>
+
+        <form method="get" action="thankyou.html">
+            
+            <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstname" id="firstName" required title="Enter your first name" autocomplete="given-name">
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastname" id="lastName" required title="Enter your last name" autocomplete="family-name">
+
+            <label for="orgTitle">Organizational Title:</label>
+            <input type="text" name="orgTitle" id="orgTitle" title="Enter your organization title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required title="Enter your email" autocomplete="email" placeholder="example@email.com">
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" name="phone" id="phone" required title="Enter you phone number" autocomplete="tel">
+
+            <label for="organization">Organization Name:</label>
+            <input type="text" id="organization" name="organization" required title="Enter your buiness or organization name" autocomplete="organization">
+
+            <label for="membership">Membership Level:</label>
+            <select id="membership" name="organization" title="Choose your membership level">
+                <option value="np">Non Profit Organization (free)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+
+            <label for="description">Business Description</label>
+            <textarea name="description" id="description" title="Enter a description of your organization"></textarea>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <button type="submit">Submit Application</button>
+            </div>
+        </form>
+
+        <div id="membership-c"></div>
+
+        <dialog id="mydialog">
+            <div>
+                <h2></h2>
+                <button>X</button>
+            </div>
+            <p></p>
+        </dialog>
+        </div>
     </main>
     <footer>
         <p class="contact-info">Guatemala Chamber of Commerce<br>1st Street 2nd avenue<br>Guatemala, Guatemala<br>info@commerge.gt<br>(502)9999-9999</p>
