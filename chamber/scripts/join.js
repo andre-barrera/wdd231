@@ -86,3 +86,13 @@ dialogClose.addEventListener("click", () => {dialog.close()});
 
 
 fetchMembership();
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tsField = document.getElementById("timestamp");
+  if (tsField) {
+    const now = new Date();
+    tsField.value = now.toLocaleString();  
+  }
+});

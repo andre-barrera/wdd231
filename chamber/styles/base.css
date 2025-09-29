@@ -457,3 +457,33 @@ form textarea {
 #mydialog::backdrop {
     background-color: rgba(58, 33, 3, 0.6);
 }
+
+.thankyou {
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 2rem;
+  border: 1px solid var(--first-color, #ccc);
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.thankyou h1{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.TSubHeading{
+    margin-bottom: 1.5rem;
+}
+
+.submission-details p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+
+html, body {
+  height: 100%;      /* make full-page height available */
+  display: flex;
+  flex-direction: column;
+}
