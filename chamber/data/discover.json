@@ -1,0 +1,50 @@
+[
+    {
+      "title": "Catedral Metropolitana",
+      "address": "8a Calle y 7a Avenida, Zona 1, Guatemala City",
+      "description": "Built in the late 18th century, the Metropolitan Cathedral is one of Guatemala City’s most iconic landmarks and a center of Catholic worship.",
+      "image": "catedral.webp"
+    },
+    {
+      "title": "Palacio Nacional de la Cultura",
+      "address": "6a Calle y 6a Avenida, Zona 1, Guatemala City",
+      "description": "Known as the ‘Green Palace,’ this historic building served as a presidential palace and now hosts cultural events and exhibitions.",
+      "image": "palacio-nacional.webp"
+    },
+    {
+      "title": "Plaza de la Constitución (Parque Central)",
+      "address": "Zona 1, Guatemala City",
+      "description": "The central square of Guatemala City, surrounded by historic buildings, is a popular gathering place for locals and visitors alike.",
+      "image": "plaza-constitucion.webp"
+    },
+    {
+      "title": "Mercado Central",
+      "address": "8a Avenida y 8a Calle, Zona 1, Guatemala City",
+      "description": "A bustling marketplace where visitors can shop for crafts, textiles, fresh produce, and traditional Guatemalan cuisine.",
+      "image": "mercado-central.webp"
+    },
+    {
+      "title": "Museo Nacional de Arqueología y Etnología",
+      "address": "6a Calle y 7a Avenida, Finca La Aurora, Zona 13, Guatemala City",
+      "description": "This museum preserves Mayan artifacts, including ceramics, sculptures, and stelae, offering insight into Guatemala’s ancient history.",
+      "image": "museo-arqueologia.webp"
+    },
+    {
+      "title": "Kaminaljuyú Archaeological Site",
+      "address": "7a Calle Final, Zona 7, Guatemala City",
+      "description": "One of the most important pre-Columbian Mayan sites in the valley, with ruins that date back over 2,000 years.",
+      "image": "kaminaljuyu.webp"
+    },
+    {
+      "title": "Mapa en Relieve",
+      "address": "Zona 2, Guatemala City",
+      "description": "A giant outdoor relief map built in 1905, showcasing the geography and topography of Guatemala in remarkable detail.",
+      "image": "mapa-relieve.webp"
+    },
+    {
+      "title": "La Aurora Zoo",
+      "address": "7a Avenida, Zona 13, Guatemala City",
+      "description": "One of the largest and most modern zoos in Central America, home to native and exotic animals from around the world.",
+      "image": "la-aurora-zoo.webp"
+    }
+]

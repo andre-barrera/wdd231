@@ -9,6 +9,7 @@
     --second-color: #5f3e29;
     --third-color: #f4c773;
     --fourth-color: #665142;
+    --gap: 1rem;
 }
 
 header{
@@ -487,3 +488,128 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+
+/* Discover */
+
+.discover-page{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "intro"
+    "gallery"
+    "side";
+  gap: var(--gap);
+  padding: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.intro { 
+    grid-area: intro; 
+}
+.gallery { 
+    grid-area: gallery; 
+}
+.side-info { 
+    grid-area: side; 
+}
+
+.gallery{
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.gallery .card {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 1px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+.gallery .card figure { 
+    margin: 0; 
+}
+
+.gallery .card img { 
+    width: 100%; 
+    height: auto; 
+    aspect-ratio: 3/2; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.gallery .card .card-content { 
+    padding: .75rem; 
+    display:flex; 
+    flex-direction:column; 
+    gap: .35rem; 
+}
+
+.gallery .card h2 { 
+    margin: 0; 
+    font-size: 1.05rem; 
+    color: var(--fourth-color); 
+}
+
+.gallery .card address { 
+    font-style: normal; 
+    color: #666; 
+    font-size: .9rem; 
+}
+
+.gallery .card p { 
+    margin: .6rem 0 0 0; 
+    color: #333; 
+    flex: 1 0 auto; 
+}
+
+.gallery .card .card-actions { 
+    padding: .75rem; 
+    display:flex; 
+    justify-content:flex-end; 
+}
+
+.gallery .card button { 
+    background: var(--second-color); 
+    color: white; 
+    border: none; 
+    padding: .5rem .75rem; 
+    border-radius:6px; 
+    cursor:pointer; 
+}
+
+
+.card-1 { grid-area: card1; }
+.card-2 { grid-area: card2; }
+.card-3 { grid-area: card3; }
+.card-4 { grid-area: card4; }
+.card-5 { grid-area: card5; }
+.card-6 { grid-area: card6; }
+.card-7 { grid-area: card7; }
+.card-8 { grid-area: card8; }
+
+
+@media (hover: hover) and (pointer: fine) and (min-width: 641px) {
+  .gallery .card img { 
+    transition: transform .28s ease, filter .28s ease; 
+}
+  .gallery .card:hover img { 
+    transform: scale(1.05); 
+    filter: brightness(.96); 
+}
+}
+

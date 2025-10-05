@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cesar Barrera">
+    <meta name="description" content="Chamber of Comerce directory page">
+    <title>Guatemala House of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/discover.js" defer></script>
+    <meta property="og:title" content="Guatemala Chamger of Commerce">
+    <meta property="og:description" content="Discover how to promote and grow your local business while connecting with local members">
+    <meta property="og:image" content="https://andre-barrera.github.io/wdd231/chamber/images/chamber-og.jpg">
+    <meta property="og:url" content="https://andre-barrera.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <div class="menu">
+    <header>
+        <img src="images/chamber-logo.svg" alt="Guatemala Chamber of Commerce Logo" width="512" height="512">
+        <span>Guatemala Chamber Of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <main class="discover-page">
+
+    <!-- Intro / visit message -->
+    <section class="intro" id="intro">
+      <h1>Discover</h1>
+      <p>Representative information and highlights that appeal to prospective members and visitors.</p>
+      <div id="visit-message" class="visit-message" role="status" aria-live="polite"></div>
+    </section>
+
+    <!-- Gallery: cards injected by JS; grid areas defined in CSS -->
+    <section id="gallery" class="gallery" aria-label="Area highlights (8 items)"></section>
+
+  </main>
+
+    <footer>
+        <p class="contact-info">Guatemala Chamber of Commerce<br>1st Street 2nd avenue<br>Guatemala, Guatemala<br>info@commerge.gt<br>(502)9999-9999</p>
+        <div class="social">
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="Youtube link"></a>
+            <a href="https://x.com/?lang=es" target="_blank"><img src="images/twitter-x.svg" alt="Twitter-x link"></a>
+            <a href="https://www.linkedin.com/in/andre-barrera-9849982b5/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin link"></a>
+        </div>
+        <div>
+        <p class="currentyear"><span id="currentyear"></span> | Cesar Barrera | Guatemala</p>
+        <p class="lastModified"><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
