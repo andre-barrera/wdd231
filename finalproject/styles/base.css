@@ -1,0 +1,37 @@
+.primary-color { background-color: #00FFF7; }
+.accent-color { background-color: #FF00FF; }
+.background-color { background-color: #1E1E1E; }
+.text-color { background-color: #E0E0E0; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 2rem;
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+}
+
+
+h1, h2 {
+  font-family: "Press Start 2P", cursive;
+  color: #00FFF7; 
+}
+
+h1 {
+  border-bottom: 3px solid #FF00FF;
+  padding-bottom: 0.5rem;
+}
+
+.color-sample {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  margin-left: 10px;
+  border: 1px solid #000;
+  vertical-align: middle;
+}
+
+img {
+    border-radius: 10px;
+    height: 500px;
+    width: auto;
+}
