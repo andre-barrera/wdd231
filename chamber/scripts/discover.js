@@ -1,10 +1,4 @@
-/**
- * scripts/discover.js
- * - Loads data/discover.json and creates 8 cards (h2, figure>img, address, p, button)
- * - Adds classes card-1 ... card-8 so CSS grid-template-areas map them
- * - Handles localStorage last-visit messages
- * - Graceful error handling
- */
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const GALLERY = document.getElementById('gallery');
@@ -12,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const DATA_URL = 'data/discover.json';
   const LS_KEY = 'discover_last_visit';
 
-  // 1) last-visit logic
+  // last-visit 
   (function handleLastVisit(){
     try {
       const now = Date.now();
@@ -32,13 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       localStorage.setItem(LS_KEY, String(now));
     } catch (err) {
-      // localStorage may be unavailable (privacy mode) — show neutral message
       try { VISIT_MSG.textContent = 'Welcome! Let us know if you have any questions.'; } catch(e) {}
       console.warn('LocalStorage unavailable or error reading/writing.', err);
     }
   })();
 
-  // 2) Fetch JSON and render cards
+  // Fetch JSON 
   async function loadCards() {
     if (!GALLERY) return;
     try {
@@ -50,22 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Create up to 8 cards (if JSON contains more, we take first 8)
+      // cards
       const toShow = items.slice(0, 8);
       toShow.forEach((it, idx) => {
         const card = document.createElement('article');
         card.className = `card card-${idx+1}`; // card-1 .. card-8 for grid areas
-
-        // figure > img
+     
         const fig = document.createElement('figure');
         const img = document.createElement('img');
         img.src = `images/${it.image}`;
         img.alt = it.title || `Image ${idx+1}`;
-        // set loading attribute for performance
+
         img.loading = 'lazy';
         fig.appendChild(img);
 
-        // content container with title/address/description
         const content = document.createElement('div');
         content.className = 'card-content';
 
@@ -89,12 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.type = 'button';
         btn.textContent = 'Learn more';
         btn.addEventListener('click', () => {
-          // placeholder behaviour — you can change to open modal or details page
+
+        // placeholder
           alert(it.title + '\n\n' + (it.description || ''));
         });
         actions.appendChild(btn);
 
-        // assemble
+        // create cards
         card.appendChild(fig);
         card.appendChild(content);
         card.appendChild(actions);
