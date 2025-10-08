@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <script src="scripts/discover.js" defer></script>
     <meta property="og:title" content="Guatemala Chamger of Commerce">
     <meta property="og:description" content="Discover how to promote and grow your local business while connecting with local members">
@@ -46,8 +47,12 @@
       <div id="visit-message" class="visit-message" role="status" aria-live="polite"></div>
     </section>
 
-    <!-- Gallery: cards injected by JS; grid areas defined in CSS -->
     <section id="gallery" class="gallery" aria-label="Area highlights (8 items)"></section>
+
+    <dialog id="visitDialog">
+        <p id="visitText"></p>
+        <button id="closeDialog">Close</button>
+    </dialog>
 
   </main>
 
