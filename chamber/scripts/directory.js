@@ -17,7 +17,7 @@ function displayMembers(members) {
         const card = document.createElement("section");
 
         card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} logo">
+            <img scr="images/${member.image}" alt="${member.name} logo">
             <div>
                 <h2>${member.name}</h2>
                 <p><strong>Address:</strong> ${member.address}</p>

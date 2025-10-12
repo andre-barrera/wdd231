@@ -1,30 +1,23 @@
-// main.js
-import { loadGallery } from './gallery.js';
 
-document.addEventListener('DOMContentLoaded', ()=>{
-  // If gallery container exists, initialize gallery
-  if(document.querySelector('#gallery-container')){
-    loadGallery('#gallery-container', '#sidebar');
-  }
-});
+import { initCarousel } from './carousel.js';
+import { displayCards } from './cards.js';
 
+// Header mobile menu
 
 const airplane = document.querySelector('.airplane');
 
 function randomizeVerticalPosition() {
-  // Choose a random top value between 20px and 150px
   const randomTop = Math.random() * -80 + 60; 
   airplane.style.top = `${randomTop}px`;
 }
 
-// Set an initial random position
+
 randomizeVerticalPosition();
 
-// Change position each time the animation restarts
 airplane.addEventListener('animationiteration', randomizeVerticalPosition);
 
 
-//const navbutton = document.querySelector("#ham-btn");
+// Humburger button
 
 const navbutton = document.querySelector("#ham-btn"); // uncomment and use this
 const navbar = document.querySelector(".navigation");
@@ -45,69 +38,25 @@ navLinks.forEach(link => {
 });
 
 
-// Gallery
+// Carousel / Cards
 
-// main.js
+async function loadArtworks() {
+  try {
+    const response = await fetch('data/artworks.json');
+    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
-// Load JSON data
-fetch('data/artworks.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    return response.json();
-  })
-  .then(data => {
-    // Separate artworks and slides
-    const artworks = data.filter(item => item.id);
-    const slides = data.filter(item => !item.id && item.title);
+    const data = await response.json();
 
-    // ✅ HERO CAROUSEL
-    const hero = document.querySelector('.hero-carousel');
-    const heroTitle = document.getElementById('hero-title');
-    const heroText = document.getElementById('hero-text');
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
-    const calltoaction = document.getElementById('call-to-action')
+    const slides = data.heroSlides || [];
+    const collections = data.collections || [];
 
-    if (hero && slides.length > 0) {
-      let index = 0;
+    // Initialize carousel and cards
+    initCarousel(slides);
+    displayCards(collections);
 
-      function showSlide(i) {
-        const slide = slides[i];
-        hero.style.backgroundImage = `url(${slide.image})`;
-        heroTitle.textContent = slide.title;
-        heroText.textContent = slide.text;
-        calltoaction.textContent = slide.textbutton;
-        calltoaction.setAttribute('href', slide.button);
-        hero.classList.add('fade');
-        setTimeout(() => hero.classList.remove('fade'), 500);
-      }
+  } catch (err) {
+    console.error('Error loading JSON:', err);
+  }
+}
 
-      // Show first slide
-      showSlide(index);
-
-      // Navigation
-      prevBtn.addEventListener('click', () => {
-        index = (index - 1 + slides.length) % slides.length;
-        showSlide(index);
-      });
-
-      nextBtn.addEventListener('click', () => {
-        index = (index + 1) % slides.length;
-        showSlide(index);
-      });
-
-      // Auto rotate every 6 seconds
-      setInterval(() => {
-        index = (index + 1) % slides.length;
-        showSlide(index);
-      }, 6000);
-    }
-  })
-  .catch(err => console.error('Error loading JSON:', err));
-
-
-
-
-
+document.addEventListener('DOMContentLoaded', loadArtworks);

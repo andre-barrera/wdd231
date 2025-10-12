@@ -1,67 +1,55 @@
-[
-  {
-    "id": "a1",
-    "title": "Blue Knight",
-    "artist": "andre",
-    "style": "8-bit",
-    "year": 2024,
-    "image": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23000' /><text x='10' y='60' fill='%2300fff7' font-size='12'>Blue Knight</text></svg>",
-    "tags": ["character","knight","retro"],
-    "description": "A compact 8-bit knight sprite with cyan highlights."
-  },
-  {
-    "id": "a2",
-    "title": "Pocket Monster Pix",
-    "artist": "fan1",
-    "style": "16-bit",
-    "year": 2023,
-    "image": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23111' /><text x='8' y='60' fill='%23ff00ff' font-size='12'>Pocket Pix</text></svg>",
-    "tags": ["fan","pokemon"],
-    "description": "Fan pixel sprite inspired by pocket creatures."
-  },
-  {
-    "id":"a3","title":"Arcade Ghost","artist":"andre","style":"8-bit","year":2022,
-    "image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%231E1E1E'/><text x='10' y='60' fill='%23E0E0E0' font-size='12'>Ghost</text></svg>",
-    "tags":["enemy","retro"],"description":"Small ghost sprite for arcade vibes."
-  },
-  {
-    "id":"a4","title":"Pixel Forest","artist":"fan2","style":"modern","year":2025,
-    "image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23222'/><text x='8' y='60' fill='%2300fff7' font-size='12'>Forest</text></svg>",
-    "tags":["environment","modern"],"description":"Higher-res pixel landscape."
-  },
+{
+  "artworks": [
+    {
+      "id": "a1",
+      "title": "Blue Knight",
+      "artist": "andre",
+      "style": "8-bit",
+      "year": 2024,
+      "image": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23000' /><text x='10' y='60' fill='%2300fff7' font-size='12'>Blue Knight</text></svg>",
+      "tags": ["character","knight","retro"],
+      "description": "A compact 8-bit knight sprite with cyan highlights."
+    },
+    {
+      "id": "a2",
+      "title": "Pocket Monster Pix",
+      "artist": "fan1",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23111' /><text x='8' y='60' fill='%23ff00ff' font-size='12'>Pocket Pix</text></svg>",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel sprite inspired by pocket creatures."
+    }
 
-  {"id":"a5","title":"Tiny Wizard","artist":"claudia","style":"8-bit","year":2024,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23000'/><text x='8' y='60' fill='%23ff00ff' font-size='12'>Wizard</text></svg>","tags":["character","magic"],"description":"Tiny spellcaster sprite."},
-  {"id":"a6","title":"Neon Car","artist":"andre","style":"16-bit","year":2024,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23111'/><text x='8' y='60' fill='%2300fff7' font-size='12'>Neon Car</text></svg>","tags":["vehicle"],"description":"Retro-future vehicle sprite."},
-  {"id":"a7","title":"Star Field","artist":"fan3","style":"modern","year":2025,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23222'/><text x='8' y='60' fill='%23E0E0E0' font-size='12'>Stars</text></svg>","tags":["bg"],"description":"Background starfield."},
-  {"id":"a8","title":"Pocket Hero","artist":"fan1","style":"8-bit","year":2023,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23000'/><text x='8' y='60' fill='%23ff00ff' font-size='12'>Hero</text></svg>","tags":["character"],"description":"Classic pocket hero."},
-  {"id":"a9","title":"Blade Pixel","artist":"andre","style":"16-bit","year":2022,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23111'/><text x='8' y='60' fill='%23ff00ff' font-size='12'>Blade</text></svg>","tags":["weapon"],"description":"Sword with shine."},
-  {"id":"a10","title":"Retro Sign","artist":"fan2","style":"8-bit","year":2021,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23222'/><text x='8' y='60' fill='%2300fff7' font-size='12'>SIGN</text></svg>","tags":["ui"],"description":"Signboard sprite."},
-  {"id":"a11","title":"Pixel Dog","artist":"claudia","style":"modern","year":2024,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%231E1E1E'/><text x='8' y='60' fill='%23E0E0E0' font-size='12'>Dog</text></svg>","tags":["character","pet"],"description":"Pet sprite, modern style."},
-  {"id":"a12","title":"Mage Tower","artist":"fan4","style":"16-bit","year":2020,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23111'/><text x='8' y='60' fill='%23E0E0E0' font-size='12'>Tower</text></svg>","tags":["building"],"description":"16-bit tower tile."},
-  {"id":"a13","title":"Pixel Runner","artist":"andre","style":"8-bit","year":2025,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23000'/><text x='8' y='60' fill='%23ff00ff' font-size='12'>Runner</text></svg>","tags":["character","runner"],"description":"Fast runner sprite."},
-  {"id":"a14","title":"Crystal Orb","artist":"fan5","style":"modern","year":2025,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23222'/><text x='8' y='60' fill='%2300fff7' font-size='12'>Orb</text></svg>","tags":["item"],"description":"Magical item pixel art."},
-  {"id":"a15","title":"City Rooftop","artist":"fan3","style":"16-bit","year":2024,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23111'/><text x='8' y='60' fill='%23ff00ff' font-size='12'>Rooftop</text></svg>","tags":["environment"],"description":"16-bit rooftop tile."},
+  ],
 
+  "heroSlides": [
+    {
+      "title": "Explore Pixel Worlds",
+      "text": "Step into 8-bit adventures full of color and nostalgia.",
+      "image": "images/carousel.webp",
+      "textbutton": "Visit our Gallery",
+      "button": "gallery.html"
+    },
+    {
+      "title": "Meet Retro Heroes",
+      "text": "Discover your favorite pixel legends reimagined.",
+      "image": "images/carousel1.jpg",
+      "textbutton": "Join us",
+      "button": "form.html"
+    },
+    {
+      "title": "Create Your Own",
+      "text": "Design and share your pixel masterpieces.",
+      "image": "images/carousel2.webp",
+      "textbutton": "Check Available Resources",
+      "button": "resources.html"
+    }
+  ],
 
-   {
-    "title": "Explore Pixel Worlds",
-    "text": "Step into 8-bit adventures full of color and nostalgia.",
-    "image": "images/carousel.webp",
-    "textbutton": "Visit our Gallery",
-    "button": "gallery.html"
-  },
-  {
-    "title": "Meet Retro Heroes",
-    "text": "Discover your favorite pixel legends reimagined.",
-    "image": "images/carousel1.jpg",
-    "textbutton": "Join us",
-    "button": "form.html"
-  },
-  {
-    "title": "Create Your Own",
-    "text": "Design and share your pixel masterpieces.",
-    "image": "images/carousel2.webp",
-    "textbutton": "Check Avaialable Resources",
-    "button": "resources.html"
-  }
-]
+  "collections": [
+    { "collectionName": "Retro Characters", "collectionImage": "images/retro-characters.webp" },
+    { "collectionName": "Fan Art", "collectionImage": "images/fan-art.jpg" },
+    { "collectionName": "Environments", "collectionImage": "images/environments.jpg" }
+  ]
+}
