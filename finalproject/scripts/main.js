@@ -2,15 +2,6 @@
 import { loadGallery } from './gallery.js';
 
 document.addEventListener('DOMContentLoaded', ()=>{
-  // attach hamburger for mobile
-  const hb = document.getElementById('hamburger');
-  if(hb){
-    hb.addEventListener('click', ()=>{
-      const nav = document.querySelector('nav ul');
-      if(nav) nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-    });
-  }
-
   // If gallery container exists, initialize gallery
   if(document.querySelector('#gallery-container')){
     loadGallery('#gallery-container', '#sidebar');
@@ -31,4 +22,26 @@ randomizeVerticalPosition();
 
 // Change position each time the animation restarts
 airplane.addEventListener('animationiteration', randomizeVerticalPosition);
+
+
+//const navbutton = document.querySelector("#ham-btn");
+
+const navbutton = document.querySelector("#ham-btn"); // uncomment and use this
+const navbar = document.querySelector(".navigation");
+
+navbutton.addEventListener("click", () => {
+    navbutton.classList.toggle("show");
+    navbar.classList.toggle("show");
+});
+
+//Wayfinding
+const navLinks = document.querySelectorAll(".navigation a");
+const currentPath = window.location.pathname;
+
+navLinks.forEach(link => {
+    if (link.getAttribute("href") !== "#" && currentPath.includes(link.getAttribute("href"))) {
+        link.classList.add("active");
+    }
+});
+
 

@@ -12,10 +12,11 @@
   margin: 0;
 }
 
-body{
+body, html{
   font-family: "Roboto", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 header{
@@ -65,9 +66,14 @@ header span{
 
 
 .navigation {
-  position: relative; /* To position the clouds relative to the navigation */
+  display: none;
+}
+
+.navigation.show{
+  position: relative;
   display: block;
 }
+
 
 .navigation ul {
   position: relative; /* make sure it creates a stacking context */
@@ -89,6 +95,12 @@ header span{
   font-family: "Press Start 2P", cursive;
 }
 
+.navigation a.active {
+    background: rgba(128, 0, 255, 0.2);/* neon cyan with 30% opacity */
+    backdrop-filter: blur(2px); /* keeps the blur effect */
+}
+
+
 .cloud {
   display: block;
   position: absolute;
@@ -105,7 +117,7 @@ header span{
   height: 30px;
   width: auto;
   bottom: 10px;
-  left: -30%;
+  transform: translateX(110vw);
   animation: floatCloud 23s linear infinite;
   animation-delay: 6s;
   z-index: 1;
@@ -116,8 +128,8 @@ header span{
   position: absolute;
   height: 55px;
   width: auto;
+  transform: translateX(110vw);
   top: 50px;
-  left: -30%;
   animation: floatCloud 21s linear infinite;
   animation-delay: 10s;
   z-index: 1;
@@ -129,15 +141,16 @@ header span{
   height: 135px;
   width: auto;
   top: 40px;
-  left: -30%;
+  transform: translateX(110vw);
   animation: floatCloud 10s linear infinite;
   animation-delay: 5s;
   z-index: 1;
 }
 
-
 @keyframes floatCloud {
-  0% { left: 100%; }
-  100% { left: -100px; }
+  0% { transform: translateX(110vw); }
+  100% { transform: translateX(-200px); }
 }
+
+
 
