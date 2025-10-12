@@ -152,5 +152,73 @@ header span{
   100% { transform: translateX(-200px); }
 }
 
+/* Main */ 
 
+h1 {
+  margin: 20px 10px;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+.hero-carousel {
+  position: relative;
+  display: grid;
+  grid-template-columns: 52px 1fr 52px;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "button1 title button2";
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+  text-align: center;
+  transition: background-image 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.hero-carousel button {
+  height: 44px;
+  width: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 3rem;
+}
+
+.prev { 
+  grid-area: button1;
+  align-self: center;
+}
+
+.next { 
+  grid-area: button2; 
+  align-self: center; 
+}
+
+.hero-slide {
+  margin-top: 15px;
+  padding: 10px;
+  align-self: start;
+  font-size: 1.2rem;
+  grid-column: 1/4;
+  grid-row: 1;
+  background: rgba(0, 0, 0, 0.5); /* 40% transparent grey */
+  backdrop-filter: blur(1px);
+}
+
+#hero-title {
+  margin-bottom: 0.5rem;
+}
+
+#call-to-action {
+  font-size: 1rem;
+  grid-area: title;
+  grid-row: 2;
+  justify-self: center;
+  width: auto;
+  height: auto;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 20px;
+
+}
 

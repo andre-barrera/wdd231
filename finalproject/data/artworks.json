@@ -40,5 +40,28 @@
   {"id":"a12","title":"Mage Tower","artist":"fan4","style":"16-bit","year":2020,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23111'/><text x='8' y='60' fill='%23E0E0E0' font-size='12'>Tower</text></svg>","tags":["building"],"description":"16-bit tower tile."},
   {"id":"a13","title":"Pixel Runner","artist":"andre","style":"8-bit","year":2025,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23000'/><text x='8' y='60' fill='%23ff00ff' font-size='12'>Runner</text></svg>","tags":["character","runner"],"description":"Fast runner sprite."},
   {"id":"a14","title":"Crystal Orb","artist":"fan5","style":"modern","year":2025,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23222'/><text x='8' y='60' fill='%2300fff7' font-size='12'>Orb</text></svg>","tags":["item"],"description":"Magical item pixel art."},
-  {"id":"a15","title":"City Rooftop","artist":"fan3","style":"16-bit","year":2024,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23111'/><text x='8' y='60' fill='%23ff00ff' font-size='12'>Rooftop</text></svg>","tags":["environment"],"description":"16-bit rooftop tile."}
+  {"id":"a15","title":"City Rooftop","artist":"fan3","style":"16-bit","year":2024,"image":"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23111'/><text x='8' y='60' fill='%23ff00ff' font-size='12'>Rooftop</text></svg>","tags":["environment"],"description":"16-bit rooftop tile."},
+
+
+   {
+    "title": "Explore Pixel Worlds",
+    "text": "Step into 8-bit adventures full of color and nostalgia.",
+    "image": "images/carousel.webp",
+    "textbutton": "Visit our Gallery",
+    "button": "gallery.html"
+  },
+  {
+    "title": "Meet Retro Heroes",
+    "text": "Discover your favorite pixel legends reimagined.",
+    "image": "images/carousel1.jpg",
+    "textbutton": "Join us",
+    "button": "form.html"
+  },
+  {
+    "title": "Create Your Own",
+    "text": "Design and share your pixel masterpieces.",
+    "image": "images/carousel2.webp",
+    "textbutton": "Check Avaialable Resources",
+    "button": "resources.html"
+  }
 ]

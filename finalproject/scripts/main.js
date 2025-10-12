@@ -13,7 +13,7 @@ const airplane = document.querySelector('.airplane');
 
 function randomizeVerticalPosition() {
   // Choose a random top value between 20px and 150px
-  const randomTop = Math.random() * -80 + 40; 
+  const randomTop = Math.random() * -80 + 60; 
   airplane.style.top = `${randomTop}px`;
 }
 
@@ -43,5 +43,70 @@ navLinks.forEach(link => {
         link.classList.add("active");
     }
 });
+
+
+// Gallery
+
+// main.js
+
+// Load JSON data
+fetch('data/artworks.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    // Separate artworks and slides
+    const artworks = data.filter(item => item.id);
+    const slides = data.filter(item => !item.id && item.title);
+
+    // ✅ HERO CAROUSEL
+    const hero = document.querySelector('.hero-carousel');
+    const heroTitle = document.getElementById('hero-title');
+    const heroText = document.getElementById('hero-text');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const calltoaction = document.getElementById('call-to-action')
+
+    if (hero && slides.length > 0) {
+      let index = 0;
+
+      function showSlide(i) {
+        const slide = slides[i];
+        hero.style.backgroundImage = `url(${slide.image})`;
+        heroTitle.textContent = slide.title;
+        heroText.textContent = slide.text;
+        calltoaction.textContent = slide.textbutton;
+        hero.classList.add('fade');
+        setTimeout(() => hero.classList.remove('fade'), 500);
+      }
+
+      // Show first slide
+      showSlide(index);
+
+      // Navigation
+      prevBtn.addEventListener('click', () => {
+        index = (index - 1 + slides.length) % slides.length;
+        showSlide(index);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+      });
+
+      // Auto rotate every 6 seconds
+      setInterval(() => {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+      }, 6000);
+    }
+  })
+  .catch(err => console.error('Error loading JSON:', err));
+
+
+
 
 
