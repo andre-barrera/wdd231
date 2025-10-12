@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Gallery — Retro Pixel Art & Fan Gallery</title>
+  <meta name="description" content="Gallery of pixel artworks including 8-bit and 16-bit fan art.">
+  <meta name="author" content="andre barrera">
+  <meta property="og:title" content="Pixel Art Gallery">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' fill='%2300FFF7'/%3E%3Ctext x='6' y='40' font-size='28' fill='%231E1E1E'%3ER%3C/text%3E%3C/svg%3E">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="logo"><span class="mark" aria-hidden="true"></span><div><div class="site-title">Retro Pixel Art & Fan Gallery</div></div></div>
+      <nav>
+        <button id="hamburger" class="hamburger btn">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="featured">
+          <h2 style="color:var(--primary)">Gallery</h2>
+          <p>Browse pixel artworks — click any item for details.</p>
+        </div>
+        <div class="cta">
+          <p>Use the filter to view 8-bit, 16-bit or modern items.</p>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div id="gallery-container">
+          <!-- gallery.js will render cards here -->
+        </div>
+
+        <aside id="sidebar">
+          <!-- gallery.js will populate random pixel and filter -->
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <small>© 2025 Retro Pixel Art & Fan Gallery — <a href="form-action.html">Attributions</a></small>
+    </footer>
+  </div>
+</body>
+</html>
