@@ -273,13 +273,24 @@ h1 {
   justify-self: center;
 }
 
+
+
 .social a img{
   height: 44px;
   width: auto;
   margin: 15px;
+  transition: transform 0.3s ease, fill 0.3s ease;
+  animation: pressPause 6s infinite ease-in-out;
 }
 
 footer p{
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+@keyframes pressPause {
+  0%    { transform: scale(1); }
+  12%   { transform: scale(0.9); }    
+  16.66%{ transform: scale(1); }     
+  100%  { transform: scale(1); }
+}   
