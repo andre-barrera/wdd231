@@ -92,7 +92,7 @@ header span{
 .cloud {
   display: block;
   position: absolute;
-  height: 100px;
+  height: 75px;
   width: auto;
   top: 0px;
   animation: floatCloud 20s linear infinite;
@@ -102,11 +102,35 @@ header span{
 .cloud2 {
   display: block;
   position: absolute;
-  height: 100px;
+  height: 30px;
   width: auto;
-  top: 70px;
+  bottom: 10px;
   left: -30%;
-  animation: floatCloud 20.5s linear infinite;
+  animation: floatCloud 23s linear infinite;
+  animation-delay: 6s;
+  z-index: 1;
+}
+
+.cloud3 {
+  display: block;
+  position: absolute;
+  height: 55px;
+  width: auto;
+  top: 50px;
+  left: -30%;
+  animation: floatCloud 21s linear infinite;
+  animation-delay: 10s;
+  z-index: 1;
+}
+
+.airplane {
+  display: block;
+  position: absolute;
+  height: 135px;
+  width: auto;
+  top: 40px;
+  left: -30%;
+  animation: floatCloud 10s linear infinite;
   animation-delay: 5s;
   z-index: 1;
 }
@@ -116,3 +140,4 @@ header span{
   0% { left: 100%; }
   100% { left: -100px; }
 }
+

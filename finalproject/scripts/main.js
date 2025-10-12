@@ -16,3 +16,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
     loadGallery('#gallery-container', '#sidebar');
   }
 });
+
+
+const airplane = document.querySelector('.airplane');
+
+function randomizeVerticalPosition() {
+  // Choose a random top value between 20px and 150px
+  const randomTop = Math.random() * -80 + 40; 
+  airplane.style.top = `${randomTop}px`;
+}
+
+// Set an initial random position
+randomizeVerticalPosition();
+
+// Change position each time the animation restarts
+airplane.addEventListener('animationiteration', randomizeVerticalPosition);
+
