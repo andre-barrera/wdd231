@@ -46,7 +46,7 @@ header span{
   text-align: center;
   font-family: "Press Start 2P", cursive;
   color: var(--primary-color);
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   line-height: 25px;
   padding: 10px 0;
 }

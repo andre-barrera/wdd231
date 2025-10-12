@@ -63,7 +63,7 @@ async function loadArtworks() {
 
 document.addEventListener('DOMContentLoaded', loadArtworks);
 
-
+// Last Modification 
 const year = document.getElementById("currentyear");
 const lastModified = document.getElementById("lastModified");
 const today = new Date();
