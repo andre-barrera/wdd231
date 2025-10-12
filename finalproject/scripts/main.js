@@ -79,6 +79,7 @@ fetch('data/artworks.json')
         heroTitle.textContent = slide.title;
         heroText.textContent = slide.text;
         calltoaction.textContent = slide.textbutton;
+        calltoaction.setAttribute('href', slide.button);
         hero.classList.add('fade');
         setTimeout(() => hero.classList.remove('fade'), 500);
       }
