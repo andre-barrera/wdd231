@@ -37,6 +37,8 @@ navLinks.forEach(link => {
     }
 });
 
+// Last Modified
+
 
 // Carousel / Cards
 
@@ -60,3 +62,11 @@ async function loadArtworks() {
 }
 
 document.addEventListener('DOMContentLoaded', loadArtworks);
+
+
+const year = document.getElementById("currentyear");
+const lastModified = document.getElementById("lastModified");
+const today = new Date();
+
+year.innerHTML= `&copy; ${today.getFullYear()}`;
+lastModified.innerHTML =`Last Modification: ${document.lastModified}`;
