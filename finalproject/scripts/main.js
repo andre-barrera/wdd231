@@ -70,3 +70,9 @@ const today = new Date();
 
 year.innerHTML= `&copy; ${today.getFullYear()}`;
 lastModified.innerHTML =`Last Modification: ${document.lastModified}`;
+
+const toggleBtn = document.getElementById('mode-toggle');
+
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});

@@ -7,6 +7,15 @@
   --mobile-menu: #fae9cf;
 }
 
+body.dark-mode {
+  --background-color: #1E1E1E;
+  --primary-color: #;
+  --text-color: #E0E0E0;
+  --text-color2: #FF073A;
+  --accent-color: #FF00FF;
+  --mobile-menu: #fae9cf;
+}
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -63,6 +72,19 @@ header span{
   content: "\00D7";
 }
 
+#mode-toggle {
+  position: absolute;
+  border: none;
+  background: none;
+  left: 4px;
+  top: 4px;
+  z-index: 3;
+}
+
+#mode-toggle img{
+  height: 35px;
+  width: auto;
+}
 
 .navigation {
   display: none;
@@ -75,11 +97,11 @@ header span{
 
 
 .navigation ul {
-  position: relative; /* make sure it creates a stacking context */
+  position: relative; 
   z-index: 2;
   list-style: none;
   text-align: right;
-  background: var(--mobile-menu);
+  background: var(--background-color);
   margin: 0;
   padding: 0;
 }
@@ -95,8 +117,8 @@ header span{
 }
 
 .navigation a.active {
-    background: rgba(128, 0, 255, 0.2);/* neon cyan with 30% opacity */
-    backdrop-filter: blur(2px); /* keeps the blur effect */
+    background: rgba(128, 0, 255, 0.2);
+    backdrop-filter: blur(2px); 
 }
 
 
@@ -164,6 +186,7 @@ footer {
 /* Main */ 
 
 h1 {
+  display: none;
   margin: 20px 10px;
   color: var(--primary-color);
   font-size: 1.3rem;
@@ -273,8 +296,6 @@ h1 {
   justify-self: center;
 }
 
-
-
 .social a img{
   height: 44px;
   width: auto;
@@ -294,3 +315,7 @@ footer p{
   16.66%{ transform: scale(1); }     
   100%  { transform: scale(1); }
 }   
+
+aside {
+  display: none;
+}
