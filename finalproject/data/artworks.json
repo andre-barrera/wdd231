@@ -2,25 +2,84 @@
   "artworks": [
     {
       "id": "a1",
-      "title": "Blue Knight",
-      "artist": "andre",
+      "title": "Knight",
+      "artist": "fan100",
       "style": "8-bit",
       "year": 2024,
-      "image": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23000' /><text x='10' y='60' fill='%2300fff7' font-size='12'>Blue Knight</text></svg>",
+      "image": "images/knightcharacter-pixelart.webp",
       "tags": ["character","knight","retro"],
       "description": "A compact 8-bit knight sprite with cyan highlights."
     },
     {
       "id": "a2",
-      "title": "Pocket Monster Pix",
+      "title": "Monster Pix",
       "artist": "fan1",
       "style": "16-bit",
       "year": 2023,
-      "image": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><rect width='120' height='120' fill='%23111' /><text x='8' y='60' fill='%23ff00ff' font-size='12'>Pocket Pix</text></svg>",
+      "image": "images/gamecharacter-pixelart.webp",
+      "tags": ["fan","character"],
+      "description": "Fan pixel sprite inspired by special creatures."
+    },
+    {
+      "id": "a3",
+      "title": "Apocalypse",
+      "artist": "fan1",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/futureknight-pixelart.webp",
+      "tags": ["fan","character"],
+      "description": "Fan pixel sprite inspired by special characters."
+    },
+    {
+      "id": "a4",
+      "title": "City",
+      "artist": "fan145",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/city-pixelart.webp",
       "tags": ["fan","pokemon"],
-      "description": "Fan pixel sprite inspired by pocket creatures."
+      "description": "Fan pixel sprite inspired by special landscapes."
+    },
+    {
+      "id": "a5",
+      "title": "Pets",
+      "artist": "fan1@",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/dogcharacter-pixelart.webp",
+      "tags": ["pets","fan"],
+      "description": "Fan pixel art inspired by animals."
+    },
+    {
+      "id": "a6",
+      "title": "Store",
+      "artist": "fan1",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/store1-pixelart.webp",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel inspired by buildings."
+    },
+    {
+      "id": "a7",
+      "title": "Wolf",
+      "artist": "fan851",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/wolf-pixelart.webp",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel inspired by animals."
+    },
+    {
+      "id": "a8",
+      "title": "Street",
+      "artist": "fan412",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/street-pixelart.webp",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel inspired by lanscapes."
     }
-
   ],
 
   "heroSlides": [

@@ -1,27 +1,73 @@
+
+
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Contact — Retro Pixel Art & Fan Gallery</title>
-  <meta name="description" content="Contact form for Retro Pixel Art & Fan Gallery">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pixel Vault Homepage</title>
+  <meta name="description" content="Retro Pixel Art & Fan Gallery — explore 8-bit and 16-bit fan pixel art, tutorials, and resources.">
   <meta name="author" content="andre barrera">
+  <meta property="og:title" content="Retro Pixel Art & Fan Gallery">
+  <meta property="og:description" content="Explore retro pixel art and fan-made characters.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://andre-barrera.github.io/wdd231/finalproject/index.html">
+  <link rel="icon" href="images/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
+  <script type="module" src="scripts/main.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <h2>Contact / Submit Art</h2>
-    <form action="form-action.html" method="get">
-      <label for="name">Name</label>
-      <input id="name" name="name" required>
-
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="4"></textarea>
-
-      <button class="btn btn-primary" type="submit">Submit</button>
-    </form>
+    <div class="menu">
+    <header>
+        <img src="images/favicon.svg" alt="Retro Art Fanpage logo" width="512" height="512">
+        <span>Pixel Vault</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <button id="mode-toggle" aria-label="Toggle Dark/Light Mode"><img src="images/dark-mode.svg" alt="Dark Mode"></button>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="form.html">Join Us</a></li>
+            <div>
+             <img class="cloud" src="images/cloud1.webp" alt="">
+             <img class="cloud2" src="images/cloud2.webp" alt="">
+             <img class="cloud3" src="images/cloud3.webp" alt="">
+             <img class="airplane" src="images/airplane.webp" alt="">
+            </div>
+        </ul>
+    </nav>
   </div>
+    <main>
+      <div>
+      <h2>Contact / Submit Art</h2>
+      <form action="form-action.html" method="get">
+        <label for="name">Name</label>
+        <input id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+      </div>
+    </main>
+    <footer>
+      <div class="social">
+        <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="Youtube Link"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="Instagram Link"></a>
+        <a href="https://www.linkedin.com/in/andre-barrera-9849982b5/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin Link"></a>
+      </div>
+      <div>
+        <p class="currentyear"><span id="currentyear"></span> | Cesar Barrera | Guatemala</p>
+        <p class="lastModified"><span id="lastModified"></span></p>
+      </div>
+    </footer>
 </body>
 </html>

@@ -1,6 +1,7 @@
 
 import { initCarousel } from './carousel.js';
 import { displayCards } from './cards.js';
+import { displayGallery } from './cards.js';
 
 // Header mobile menu
 
@@ -51,10 +52,12 @@ async function loadArtworks() {
 
     const slides = data.heroSlides || [];
     const collections = data.collections || [];
+    const galleries = data.artworks || [];
 
     // Initialize carousel and cards
     initCarousel(slides);
     displayCards(collections);
+    displayGallery(galleries);
 
   } catch (err) {
     console.error('Error loading JSON:', err);
@@ -71,6 +74,7 @@ const today = new Date();
 year.innerHTML= `&copy; ${today.getFullYear()}`;
 lastModified.innerHTML =`Last Modification: ${document.lastModified}`;
 
+// Dark mode
 const toggleBtn = document.getElementById('mode-toggle');
 
 toggleBtn.addEventListener('click', () => {
