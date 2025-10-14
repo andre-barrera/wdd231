@@ -425,8 +425,7 @@ form label {
   text-align: left;
 }
 
-form input,
-form textarea {
+form input, form textarea {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   padding: 0.6rem;
@@ -437,8 +436,7 @@ form textarea {
   transition: all 0.3s ease;
 }
 
-form input:focus,
-form textarea:focus {
+form input:focus, form textarea:focus {
   outline: none;
   border-color: var(--primary-color);
   box-shadow: 0 0 10px var(--accent-color);
@@ -479,3 +477,66 @@ form .btn:hover {
 }
 
 
+/* Thank you page */
+
+/* ==========================
+   FORM SUBMISSION PAGE
+   ========================== */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+.container h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-shadow: 0 0 10px var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+.submitted-data {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--accent-color);
+  border-radius: 15px;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  max-width: 400px;
+  color: var(--text-color);
+}
+
+.submitted-data p {
+  margin: 0.5rem 0;
+}
+
+.submitted-data .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+  color: #fff;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.submitted-data .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--primary-color);
+}
+
+#submission-count {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  color: var(--accent-color);
+  margin-top: 1.5rem;
+}

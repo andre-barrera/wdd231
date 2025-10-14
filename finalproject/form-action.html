@@ -1,26 +1,18 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Form Submission</title><meta name="author" content="andre barrera">
-<link rel="stylesheet" href="styles/style.css"></head>
+<head>
+<meta charset="utf-8">
+<title>Form Submission</title>
+<meta name="author" content="andre barrera">
+<link rel="stylesheet" href="styles/style.css">
+<script type="module" src="scripts/form-action.js" defer></script>
+</head>
 <body>
   <div class="container">
     <h2>Form Submission</h2>
     <div id="result"></div>
-    <script>
-      // parse query string and display
-      const params = new URLSearchParams(location.search);
-      if([...params.keys()].length === 0){
-        document.getElementById('result').innerHTML = '<p>No submission data found. Try submitting the form.</p>';
-      } else {
-        const out = document.createElement('div');
-        out.innerHTML = `
-          <p><strong>Name:</strong> ${params.get('name') || ''}</p>
-          <p><strong>Email:</strong> ${params.get('email') || ''}</p>
-          <p><strong>Message:</strong> ${params.get('message') || ''}</p>
-        `;
-        document.getElementById('result').appendChild(out);
-      }
-    </script>
+    <p id="submission-count"></p>
+  </div>
   </div>
 </body>
 </html>
