@@ -359,8 +359,7 @@ aside {
 
 .gallery-card div {
   justify-self: center;
-  background: white;
-  color: black;
+  background-color: #2A003E;
   line-height: 1.8rem;
   width: 325px;
   margin: 0 0 15px 0;
@@ -371,6 +370,9 @@ aside {
 
 .gallery-card h3{
   font-size: 1.2rem;
+  font-family: "Press Start 2P", cursive;
+  color: #FF073A;
+  width: 100%;
 }
 
 /* Join us */
