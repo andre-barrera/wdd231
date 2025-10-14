@@ -79,6 +79,86 @@
       "image": "images/street-pixelart.webp",
       "tags": ["fan","pokemon"],
       "description": "Fan pixel inspired by lanscapes."
+    },
+    {
+      "id": "a9",
+      "title": "Alien Scene",
+      "artist": "fan89",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/alienencounter-pixelart.webp",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel inspired by aliens."
+    },
+    {
+      "id": "a10",
+      "title": "Game Character",
+      "artist": "fan71",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/charactercity-pixelart.webp",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel inspired by game characters."
+    },
+    {
+      "id": "a11",
+      "title": "Dog",
+      "artist": "fan111",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/dogstory-pixelart.webp",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel inspired by animals."
+    },
+    {
+      "id": "a12",
+      "title": "Highway",
+      "artist": "fan478",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/highway-pixelart.webp",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel inspired by travel."
+    },
+    {
+      "id": "a12",
+      "title": "Neon City",
+      "artist": "fan78",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/neoncity-pixelart.webp",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel inspired by cities."
+    },
+    {
+      "id": "a13",
+      "title": "Space",
+      "artist": "fan4588",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/space-pixelart.webp",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel inspired by space."
+    },
+    {
+      "id": "a14",
+      "title": "Space Travel",
+      "artist": "fan8566",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/spacetravel-pixelart.webp",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel inspired by travel."
+    },
+    {
+      "id": "a15",
+      "title": "Sea",
+      "artist": "fan478",
+      "style": "16-bit",
+      "year": 2023,
+      "image": "images/sea-pixelart.webp",
+      "tags": ["fan","pokemon"],
+      "description": "Fan pixel inspired by sea."
     }
   ],
 
