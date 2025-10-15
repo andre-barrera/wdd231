@@ -533,16 +533,16 @@ form .btn:hover {
   font-size: 1rem;
   color: var(--accent-color);
   margin-top: 1.5rem;
-  line-height: 1.5rem;
+  line-height: 1.5rem; 
 }
 
 /* Resources Page Styles */
 .resources-t {
   font-family: "Press Start 2P", cursive;
   color: var(--primary-color);
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
-  margin: 2rem 0 1.5rem;
+  margin: 1rem 0 2rem 0;
 }
 
 .resources-s {
@@ -551,22 +551,23 @@ form .btn:hover {
   border-radius: 20px;
   padding: 1.5rem;
   margin: 1rem auto;
-  max-width: 800px;
+  width: 350px;
   backdrop-filter: blur(5px);
 }
 
 .resources-s h3 {
   font-family: "Press Start 2P", cursive;
   color: var(--text-color2);
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  width: 100%;
 }
 
 .resources-s p {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .resources-s ul {
@@ -611,7 +612,12 @@ form .btn:hover {
   transform: scale(1.05);
 }
 
-/* Author & Attribution Section */
+.author-a{
+  width: 350px;
+  text-align: center;
+  justify-self: center;
+}
+
 .author-a:last-of-type p {
   font-size: 0.9rem;
   color: var(--text-color2);
@@ -619,7 +625,6 @@ form .btn:hover {
   line-height: 1.5rem;
 }
 
-/* Optional subtle glow effect */
 .author-a:last-of-type::before {
   content: "";
   position: absolute;
@@ -631,4 +636,48 @@ form .btn:hover {
   background: radial-gradient(circle, rgba(255,0,255,0.05), transparent 70%);
   pointer-events: none;
   z-index: 0;
+}
+
+/* Homepage Dialog */ 
+
+dialog {
+  border: 2px solid var(--accent-color);
+  border-radius: 15px;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: var(--text-color);
+  max-width: 350px;
+  width: 90%;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+dialog h3 {
+  font-family: "Press Start 2P", cursive;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+dialog p {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color2);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+dialog button.close-dialog {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+}
+
+dialog button.close-dialog:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--primary-color);
 }

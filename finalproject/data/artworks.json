@@ -187,8 +187,14 @@
   ],
 
   "collections": [
-    { "collectionName": "Retro Characters", "collectionImage": "images/retro-characters.webp" },
-    { "collectionName": "Fan Art", "collectionImage": "images/fan-art.jpg" },
-    { "collectionName": "Environments", "collectionImage": "images/environments.jpg" }
+    { "collectionName": "Retro Characters", 
+      "collectionImage": "images/retro-characters.webp", 
+      "description": "View ideas and more"},
+    { "collectionName": "Fan Art", 
+      "collectionImage": "images/fan-art.jpg",
+      "description": "Submit and view unique pixel arts"},
+    { "collectionName": "Environments",  
+      "collectionImage": "images/environments.jpg",
+      "description": "Discover how to create your own" }
   ]
 }

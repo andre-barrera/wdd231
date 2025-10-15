@@ -5,16 +5,41 @@ export function displayCards(collections) {
   container.innerHTML = "";
 
   collections.forEach(collection => {
-    const card = document.createElement("section");
-    card.innerHTML = `
-      <figure class="card">
+    const cardSection = document.createElement("section");
+
+    // Create card figure
+    const cardFigure = document.createElement("figure");
+    cardFigure.classList.add("card");
+    cardFigure.innerHTML = `
       <img src="${collection.collectionImage}" alt="${collection.collectionName}">
       <figcaption>${collection.collectionName}</figcaption>
-      </figure>
     `;
-    container.appendChild(card);
+
+    // Create dialog
+    const cardDialog = document.createElement("dialog");
+    cardDialog.innerHTML = `
+      <h3>${collection.collectionName}</h3>
+      <p>${collection.description || "No description available."}</p>
+      <button class="close-dialog">Close</button>
+    `;
+
+    // Add event listener to open dialog on card click
+    cardFigure.addEventListener("click", () => {
+      cardDialog.showModal();
+    });
+
+    // Add event listener to close dialog
+    cardDialog.querySelector(".close-dialog").addEventListener("click", () => {
+      cardDialog.close();
+    });
+
+    // Append card and dialog to container
+    cardSection.appendChild(cardFigure);
+    cardSection.appendChild(cardDialog);
+    container.appendChild(cardSection);
   });
 }
+
 
 
 export function displayGallery(galleries) {
