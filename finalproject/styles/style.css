@@ -311,7 +311,7 @@ footer {
 .social a img{
   height: 44px;
   width: auto;
-  margin: 15px;
+  margin: 15px 15px 3px 15px;
   transition: transform 0.3s ease, fill 0.3s ease;
   animation: pressPause 6s infinite ease-in-out;
 }
