@@ -7,7 +7,7 @@ export function displayCards(collections) {
   collections.forEach(collection => {
     const cardSection = document.createElement("section");
 
-    // Create card figure
+  
     const cardFigure = document.createElement("figure");
     cardFigure.classList.add("card");
     cardFigure.innerHTML = `
@@ -15,7 +15,7 @@ export function displayCards(collections) {
       <figcaption>${collection.collectionName}</figcaption>
     `;
 
-    // Create dialog
+    
     const cardDialog = document.createElement("dialog");
     cardDialog.innerHTML = `
       <h3>${collection.collectionName}</h3>
@@ -23,17 +23,15 @@ export function displayCards(collections) {
       <button class="close-dialog">Close</button>
     `;
 
-    // Add event listener to open dialog on card click
     cardFigure.addEventListener("click", () => {
       cardDialog.showModal();
     });
 
-    // Add event listener to close dialog
+
     cardDialog.querySelector(".close-dialog").addEventListener("click", () => {
       cardDialog.close();
     });
 
-    // Append card and dialog to container
     cardSection.appendChild(cardFigure);
     cardSection.appendChild(cardDialog);
     container.appendChild(cardSection);
@@ -44,20 +42,19 @@ export function displayCards(collections) {
 
 export function displayGallery(galleries) {
   const container = document.querySelector('.gallery-cards');
+  if (!container) return;  
   container.innerHTML = "";
 
-  galleries.forEach( gallery => {
+  galleries.forEach(gallery => {
     const card = document.createElement('section');
-    if (!container) return;
     card.innerHTML = `
-    <div class="gallery-card">
-    <img src="${gallery.image}" alt="${gallery.description}">
-    <div>
-    <h3>${gallery.title}</h3>
-    <p>Artist: ${gallery.artist} - Style: ${gallery.style} - Year: ${gallery.year}</p>
-    </div>
-    </div>`;
-    
+      <div class="gallery-card">
+        <img src="${gallery.image}" alt="${gallery.description}">
+        <div>
+          <h3>${gallery.title}</h3>
+          <p>Artist: ${gallery.artist} - Style: ${gallery.style} - Year: ${gallery.year}</p>
+        </div>
+      </div>`;
     container.appendChild(card);
   });
 }
