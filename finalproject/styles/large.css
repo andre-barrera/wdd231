@@ -6,6 +6,16 @@
     align-items: center;
 }
 
+.menu img{
+    margin-left: 4rem;
+    height: 64px;
+    width: auto;
+}
+
+.cloud-effect{
+    display: none;
+}
+
 .navigation a{
     border: none;
     color: white;
@@ -43,6 +53,17 @@ header span {
 }
 
 
+.container h3{
+    text-align: center;
+    font-size: 2rem;
+    margin: 4rem;
+}
+
+dialog{
+    max-width: 800px;
+    height: auto;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -75,4 +96,35 @@ footer {
   height: 500px;
 }
 
+
+
+/* gallery */
+
+
+.gallery-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: start;   
+}
+
+.gallery-cards .gallery-card {
+  width: 100%;
+  max-width: 350px;
+}
+
+.thank-container{
+    justify-self: center;
+    text-align: center;
+}
+
+#result{
+    justify-self: center;
+    width: 600px;
+}
+
+.submitted-data{
+    justify-self: center;
+    width: 100%;
+}
 }
